@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "tarea")
 public class Tarea {
+    
 
     @Id
     private String id = new ObjectId().toString();
