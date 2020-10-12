@@ -1,0 +1,14 @@
+<h1>Nueva Tarea</h1>
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombre de la Tarea</label>
+      <input [(ngModel)]="tarea" name="tarea" type="text" class="form-control" id="tarea"  placeholder="Nombre de la tarea">
+      <small id="tareaSmall" class="textoChiquito">Rellenelo con el nombre de la tarea</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Descripcion de la Tarea</label>
+        <input [(ngModel)]="descripcion" name="descripcion" type="text" type="text" class="form-control" id="descripcion" placeholder="Descripcion de la tarea">
+        <small id="tareaSmall" class="textoChiquito">Rellenelo con la descripcion de la tarea</small>
+      </div>
+    <button (click)="enviar()" type="buttom" class="btn btn-primary">Crear Tarea</button>
+  </form>
